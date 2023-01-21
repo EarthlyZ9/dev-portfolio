@@ -6,7 +6,7 @@ import Skills from '../Skills/Skills';
 import Projects from '../Projects/Projects';
 import Study from '../Study/Study';
 
-const ScrollPage = () => {
+const ScrollPage = (props) => {
     const sectionRefs = useRef([]);
     const [startSimulation, setStartSimulation] = useState(false);
 
@@ -33,8 +33,8 @@ const ScrollPage = () => {
         console.log(targets);
         targets.forEach((t) => {
             if (t.isIntersecting) {
-                console.log(t.target.id);
-                window.location.hash = '#' + t.target.id;
+                history.pushState(null,null,'#' + t.target.id);
+                props.changeHashLocation('#' + t.target.id);
                 localStorage.setItem('last', '#' + t.target.id);
                 if (t.target.id === 'study') setStartSimulation(true);
             } else {
@@ -57,7 +57,6 @@ const ScrollPage = () => {
         <div
             id="main-scroll"
             className={`${classes.wrapper} disable-scrollbars`}
-            // onScroll={test}
         >
             <Home sectionId="home" ref={sectionRefs} />
             <AboutMe sectionId="about-me" ref={sectionRefs} />

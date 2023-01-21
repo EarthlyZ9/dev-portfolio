@@ -12,11 +12,26 @@ function App() {
     const [isToggleOpen, setIsToggleOpen] = useState(false);
     const isMobile = innerWidth <= 1024;
 
+    const [currentHashLocation, setCurrentHashLocation] = useState("#home");
+
+    const hashLocationHandler = (hash) => {
+        setCurrentHashLocation(hash);
+    };
+
     useEffect(() => {
         const resizeListener = () => {
             setInnerWidth(window.visualViewport.width);
         };
         window.addEventListener('resize', resizeListener);
+
+        window.onpopstate = () => {
+            if (isToggleOpen) {
+                closeToggleMenuHandler();
+            } else {
+                window.history.back();
+
+            }
+        };
     });
 
     useEffect(() => {
@@ -27,11 +42,6 @@ function App() {
 
     const closeToggleMenuHandler = () => {
         setIsToggleOpen(false);
-        if (isMobile) {
-            document
-                .getElementById('drawer')
-                .setAttribute('class', 'slide-out');
-        }
     };
     const openToggleMenuHandler = () => {
         setIsToggleOpen(true);
@@ -43,7 +53,7 @@ function App() {
         <BrowserRouter>
             <div className={appClasses}>
                 {!isMobile ? (
-                    <Sidebar />
+                    <Sidebar hashLocation={currentHashLocation} />
                 ) : (
                     !isToggleOpen && (
                         <SidebarToggle onToggleClick={openToggleMenuHandler} />
@@ -53,10 +63,12 @@ function App() {
                     <Drawer
                         onClose={closeToggleMenuHandler}
                         isToggleOpen={isToggleOpen}
-                    />
+                    >
+                        <Sidebar onMenuClick={closeToggleMenuHandler} hashLocation={currentHashLocation} />
+                    </Drawer>
                 )}
 
-                <Main isMobile={isMobile} />
+                <Main isMobile={isMobile} changeHashLocation={hashLocationHandler} />
             </div>
              {!isMobile && <Footer />}
         </BrowserRouter>

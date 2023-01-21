@@ -1,5 +1,4 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
 import { NavHashLink } from 'react-router-hash-link';
 import {
     FcHome,
@@ -15,7 +14,7 @@ import classes from './Sidebar.module.css';
 import { IconContext } from 'react-icons';
 
 const Sidebar = (props) => {
-    const location = useLocation();
+
     return (
         <nav className={`${classes.nav} ${props.className && props.className}`}>
             <div className={classes.profile}>
@@ -51,7 +50,7 @@ const Sidebar = (props) => {
                 <NavHashLink
                     to={'/#home'}
                     className={
-                        location.hash === '#home' && classes['menu-item']
+                        props.hashLocation === '#home' && classes['menu-item']
                     }
                     onClick={props.onMenuClick && props.onMenuClick}
                 >
@@ -61,7 +60,7 @@ const Sidebar = (props) => {
                 <NavHashLink
                     to="/#about-me"
                     className={
-                        location.hash === '#about-me' && classes['menu-item']
+                        props.hashLocation === '#about-me' && classes['menu-item']
                     }
                     onClick={props.onMenuClick && props.onMenuClick}
                 >
@@ -71,7 +70,7 @@ const Sidebar = (props) => {
                 <NavHashLink
                     to={'/#skills'}
                     className={
-                        location.hash === '#skills' && classes['menu-item']
+                        props.hashLocation === '#skills' && classes['menu-item']
                     }
                     onClick={props.onMenuClick && props.onMenuClick}
                 >
@@ -82,7 +81,7 @@ const Sidebar = (props) => {
                     to={'/#projects'}
                     activestyle={{ backgroundColor: '#77a8a4' }}
                     className={
-                        location.hash === '#projects' && classes['menu-item']
+                        props.hashLocation === '#projects' && classes['menu-item']
                     }
                     onClick={props.onMenuClick && props.onMenuClick}
                 >
@@ -92,7 +91,7 @@ const Sidebar = (props) => {
                 <NavHashLink
                     to={'/#study'}
                     className={
-                        location.hash === '#study' && classes['menu-item']
+                        props.hashLocation === '#study' && classes['menu-item']
                     }
                     onClick={props.onMenuClick && props.onMenuClick}
                 >

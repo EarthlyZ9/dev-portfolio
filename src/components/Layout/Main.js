@@ -13,7 +13,7 @@ const Main = (props) => {
     return (
         <div className={mainClasses}>
             <Routes>
-                <Route path="/*" element={<ScrollPage />} />
+                <Route path="/*" element={<ScrollPage changeHashLocation={props.changeHashLocation} />} />
                 <Route path="/projects/:projectName" element={<Project />} />
             </Routes>
             <HashLink
