@@ -86,6 +86,24 @@ const studyData = [
         label: 'Github',
         size: 7000,
     },
+    {
+        id: 13,
+        groupId: 1,
+        label: 'C#',
+        size: 3000,
+    },
+    {
+        id: 14,
+        groupId: 5,
+        label: 'Unity',
+        size: 3000,
+    },
+    {
+        id: 15,
+        groupId: 1,
+        label: 'Docker',
+        size: 4000,
+    }
 ];
 
 export { studyData };
