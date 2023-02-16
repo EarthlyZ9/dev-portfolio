@@ -86,9 +86,9 @@ const projects = (props, ref) => {
             complete: false,
         },
         {
-            path: 'chatbox',
-            title: '누구나 간편하게, ChatBox',
-            filename: 'ChatBox.md',
+            path: 'pintalk',
+            title: '누구나 간편하게, Pintalk',
+            filename: 'Pintalk.md',
             subtitle: '~ 진행중 ~',
             description:
                 '~ 진행중 ~',
@@ -97,7 +97,20 @@ const projects = (props, ref) => {
             color: '#2b0e47',
             textColor: 'white',
             complete: false,
-        }
+        },
+        {
+            path: 'aws-cdk-ml',
+            title: 'AWS CDK 를 사용한 머신러닝 모델 배포',
+            filename: 'CDK_ML.md',
+            subtitle: 'AWS CDK - Lambda Function',
+            description:
+                '파이썬 CDK 를 이용하여 AWS 리소스 생성하고 관리하기',
+            date: '2023.02',
+            icon: <HiOutlineUser />,
+            color: '#f57a4f',
+            textColor: 'black',
+            complete: true,
+        },
     ], []);
 
     return (
