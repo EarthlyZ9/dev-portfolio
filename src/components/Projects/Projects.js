@@ -111,6 +111,32 @@ const projects = (props, ref) => {
             textColor: 'black',
             complete: true,
         },
+        {
+            path: 'bk-nutrition',
+            title: '연세대 BK 연구실의 홈페이지 새단장',
+            filename: 'BK_Nutrition.md',
+            subtitle: '~ 진행중 ~',
+            description:
+                '~ 진행중 ~',
+            date: '2023.02 ~  2023.03',
+            icon: <HiOutlineUserGroup />,
+            color: '#1b46b4',
+            textColor: 'white',
+            complete: false,
+        },
+        {
+            path: 'convey',
+            title: '설문을 대하는 새로운 방법, Convey',
+            filename: 'Convey.md',
+            subtitle: '~ 진행중 ~',
+            description:
+                '~ 진행중 ~',
+            date: '2023.03 ~',
+            icon: <HiOutlineUserGroup />,
+            color: '#d0b9da',
+            textColor: 'black',
+            complete: false,
+        },
     ], []);
 
     return (
