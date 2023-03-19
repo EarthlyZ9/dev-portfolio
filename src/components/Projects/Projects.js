@@ -115,14 +115,14 @@ const projects = (props, ref) => {
             path: 'bk-nutrition',
             title: '연세대 BK 연구실의 홈페이지 새단장',
             filename: 'BK_Nutrition.md',
-            subtitle: '~ 진행중 ~',
+            subtitle: '+ FastAPI 프레임워크에 대한 고민',
             description:
-                '~ 진행중 ~',
+                'FastAPI 를 이용한 백엔드 API 와 Jinja Template 을 이용한 관리자 페이지 개발',
             date: '2023.02 ~  2023.03',
             icon: <HiOutlineUserGroup />,
             color: '#1b46b4',
             textColor: 'white',
-            complete: false,
+            complete: true,
         },
         {
             path: 'convey',

@@ -62,7 +62,7 @@ const Project = () => {
                                 return (
                                     <img
                                         style={{ width: '50%' }}
-                                        src={`/logos/${name}.jpeg`}
+                                        src={element.props.src}
                                         alt="logo"
                                     />
                                 );
