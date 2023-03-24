@@ -1,5 +1,5 @@
 import ReactMarkdown from 'react-markdown';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Base64 } from 'js-base64';
 import React, { useState, useEffect } from 'react';
 import { createTokenAuth } from '@octokit/auth-token';
@@ -14,8 +14,9 @@ const Project = () => {
     const filename = location.state.filename;
     const name = location.state.name;
 
+    const navigate = useNavigate();
+
     useEffect(() => {
-        window.history.pushState(null, null, "/#projects");
         window.addEventListener('popstate', onBackButtonEvent);
         return () => {
             window.removeEventListener('popstate', onBackButtonEvent);
@@ -24,7 +25,7 @@ const Project = () => {
 
     const onBackButtonEvent = (e) => {
         e.preventDefault();
-        window.history.forward();
+        navigate(-1);
     };
 
     const [mdFile, setMdFile] = useState(``);

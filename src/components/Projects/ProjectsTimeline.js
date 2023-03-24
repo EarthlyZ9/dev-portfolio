@@ -14,6 +14,7 @@ const ProjectsTimeline = (props) => {
         if (!param.complete) {
             alert('이 프로젝트는 아직 진행중이에요!');
         } else {
+            localStorage.setItem('last', '#projects');
             navigate(`/projects/${param.path}`, {
                 state: {
                     filename: param.filename,

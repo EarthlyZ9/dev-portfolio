@@ -26,14 +26,14 @@ const ScrollPage = (props) => {
     const observerOptions = {
         root: document.getElementById('main-scroll'),
         rootMargin: '0px',
-        threshold: 0.1,
+        threshold: 0.2,
     };
 
     const onIntersectionScroll = (targets) => {
         targets.forEach((t) => {
             if (t.isIntersecting) {
+                history.pushState(null,null,'#' + t.target.id);
                 props.changeHashLocation('#' + t.target.id);
-                localStorage.setItem('last', '#' + t.target.id);
                 if (t.target.id === 'study') setStartSimulation(true);
             } else {
                 if (t.target.id === 'study') setStartSimulation(false);
