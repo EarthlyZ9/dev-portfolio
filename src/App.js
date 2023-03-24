@@ -18,25 +18,27 @@ function App() {
         setCurrentHashLocation(hash);
     };
 
+    const closeToggleOrGoBack = () => {
+        if (isToggleOpen) {
+            closeToggleMenuHandler();
+        } else {
+            window.history.back();
+
+        }
+    };
+
+    const resizeListener = () => {
+        setInnerWidth(window.visualViewport.width);
+    };
+
     useEffect(() => {
-        const resizeListener = () => {
-            setInnerWidth(window.visualViewport.width);
-        };
         window.addEventListener('resize', resizeListener);
+        window.addEventListener('onpopstate', closeToggleOrGoBack);
 
-        window.onpopstate = () => {
-            if (isToggleOpen) {
-                closeToggleMenuHandler();
-            } else {
-                window.history.back();
-
-            }
-        };
-    });
-
-    useEffect(() => {
         return () => {
             localStorage.clear();
+            window.removeEventListener('resize', resizeListener);
+            window.removeEventListener('onpopstate', closeToggleOrGoBack);
         };
     }, []);
 

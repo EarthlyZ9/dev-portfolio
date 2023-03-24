@@ -3,7 +3,7 @@ import Title from '../UI/Title';
 import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 import './bubbleChart.css';
-import { studyData } from '../../data';
+import { studyData } from '../../data/studyData';
 import Banner from '../UI/Banner';
 import { chart, createSimulation, fillColour, ticked } from '../../util/bubble-chart';
 

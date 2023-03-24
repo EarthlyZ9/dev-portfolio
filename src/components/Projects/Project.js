@@ -1,5 +1,5 @@
 import ReactMarkdown from 'react-markdown';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { Base64 } from 'js-base64';
 import React, { useState, useEffect } from 'react';
 import { createTokenAuth } from '@octokit/auth-token';
@@ -8,25 +8,27 @@ import { request } from '@octokit/request';
 import classes from './Project.module.css';
 import Title from '../UI/Title';
 import SpaceGemRedirect from './SpaceGemRedirect';
+import projectData from '../../data/projectData';
 
-const Project = () => {
-    const location = useLocation();
-    const filename = location.state.filename;
-    const name = location.state.name;
+const Project = (props) => {
 
-    const navigate = useNavigate();
+    const params = useParams();
+    const projectName = params.pid;
+    const filename = projectData.filter((p) => p.path === projectName)[0].filename;
+
+    const onBackButtonEvent = (e) => {
+        e.preventDefault();
+        window.history.back();
+    };
 
     useEffect(() => {
+        history.pushState(null, '', location.href);
         window.addEventListener('popstate', onBackButtonEvent);
+
         return () => {
             window.removeEventListener('popstate', onBackButtonEvent);
         };
     }, []);
-
-    const onBackButtonEvent = (e) => {
-        e.preventDefault();
-        navigate(-1);
-    };
 
     const [mdFile, setMdFile] = useState(``);
 
