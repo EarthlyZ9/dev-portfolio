@@ -23,13 +23,13 @@ const studyData = [
         id: 3,
         groupId: 1,
         label: 'Fast API',
-        size: 3810,
+        size: 8000,
     },
     {
         id: 4,
         groupId: 2,
         label: 'React',
-        size: 8000,
+        size: 7000,
     },
     {
         id: 5,
@@ -59,14 +59,14 @@ const studyData = [
         id: 9,
         groupId: 3,
         label: 'AWS',
-        size: 6000,
+        size: 7000,
     },
     { id: 9, groupId: 3, label: 'Heroku', size: 4000 },
     {
         id: 10,
         groupId: 3,
         label: 'Nginx',
-        size: 6000,
+        size: 7000,
     },
     {
         id: 10,
@@ -84,7 +84,7 @@ const studyData = [
         id: 12,
         groupId: 5,
         label: 'Github',
-        size: 7000,
+        size: 8000,
     },
     {
         id: 13,
@@ -102,7 +102,7 @@ const studyData = [
         id: 15,
         groupId: 1,
         label: 'Docker',
-        size: 4000,
+        size: 6000,
     }
 ];
 

@@ -6,7 +6,6 @@
     align-items: center;
     align-content: center;
     padding: 0 5%;
-    font-family: 'suncheon-regular', sans-serif;
 }
 
 .app-mobile {
@@ -17,7 +16,6 @@
     align-items: center;
     align-content: center;
     padding: 0;
-    font-family: 'suncheon-regular', sans-serif;
 }
 
 h1 {
@@ -34,30 +32,4 @@ h1 {
 .copyright p {
     display: inline-block;
     vertical-align: middle;
-}
-
-/* Fonts */
-
-@font-face {
-    font-family: 'esamanru-bold';
-    src: url("./fonts/esamanru OTF Bold.otf")
-}
-
-@font-face {
-    font-family: 'esamanru-light';
-    src: url("./fonts/esamanru OTF Light.otf")
-}
-
-@font-face {
-    font-family: 'chosun';
-    src: url("./fonts/ChosunGu.TTF")
-}
-
-@font-face {
-    font-family: 'suncheon-regular';
-    src: url("./fonts/SuncheonR.ttf")
-}
-@font-face {
-    font-family: 'suncheon-bold';
-    src: url("./fonts/SuncheonB.ttf")
 }

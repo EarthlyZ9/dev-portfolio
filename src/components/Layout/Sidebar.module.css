@@ -7,9 +7,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'esamanru-light', sans-serif;
     font-size: 1rem;
     overflow-y: scroll;
+    font-weight: 900;
 }
 
 .profile {

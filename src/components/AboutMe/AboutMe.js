@@ -26,7 +26,7 @@ const aboutMe = (props, ref) => {
                 어제보다 성장한 오늘의 나를 추구합니다. 고민, 역경, 배움, 성장의
                 무한 굴레를 즐기는 <strong>지구력</strong>이 강한 개발자입니다.
                 주로 Python 과 Node.js 기반 백엔드 프레임워크를 다루고 있으나
-                재미있어 보이는 것이라면 무엇이든 해보는 호기심 많은 사람입니다.
+                언제나 새로운 배움을 추구합니다.
             </div>
             <ProfileInfo />
             <ExtraInfo />

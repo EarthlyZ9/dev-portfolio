@@ -30,7 +30,6 @@ const ScrollPage = (props) => {
     };
 
     const onIntersectionScroll = (targets) => {
-        console.log(targets);
         targets.forEach((t) => {
             if (t.isIntersecting) {
                 props.changeHashLocation('#' + t.target.id);
@@ -49,7 +48,6 @@ const ScrollPage = (props) => {
 
     useEffect(() => {
         const refs = sectionRefs.current;
-        console.log(refs);
         refs.forEach((el) => sectionObserver.observe(el));
     }, [sectionRefs, sectionObserver]);
 
