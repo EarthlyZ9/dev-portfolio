@@ -14,6 +14,19 @@ const Project = () => {
     const filename = location.state.filename;
     const name = location.state.name;
 
+    useEffect(() => {
+        window.history.pushState(null, null, "/#projects");
+        window.addEventListener('popstate', onBackButtonEvent);
+        return () => {
+            window.removeEventListener('popstate', onBackButtonEvent);
+        };
+    }, []);
+
+    const onBackButtonEvent = (e) => {
+        e.preventDefault();
+        window.history.forward();
+    };
+
     const [mdFile, setMdFile] = useState(``);
 
     useEffect(() => {

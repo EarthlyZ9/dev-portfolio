@@ -2,4 +2,7 @@
     /*height: 30rem;*/
     width: 100%;
     display: inline-block;
+    height: fit-content;
+    background-color: white;
+    overflow-x: hidden;
 }

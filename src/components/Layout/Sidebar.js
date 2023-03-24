@@ -79,7 +79,7 @@ const Sidebar = (props) => {
                 </NavHashLink>
                 <NavHashLink
                     to={'/#projects'}
-                    activestyle={{ backgroundColor: '#77a8a4' }}
+                    // activestyle={{ backgroundColor: '#77a8a4' }}
                     className={
                         props.hashLocation === '#projects' && classes['menu-item']
                     }
