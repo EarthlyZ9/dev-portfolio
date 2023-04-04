@@ -71,14 +71,13 @@ const projectData = [
         title: '우리의 시간을 소중하게, BisTime',
         filename: 'BisTime.md',
         subtitle: '비는 시간이 언제인가요?',
-        // description:
-        //     '모임 시간을 똑똑하게, 간단한 모임부터 팀의 효율적인 일정 관리까지 책임집니다!',
-        description: '~ 진행중 ~',
+        description:
+            '모임 시간을 똑똑하게, 간단한 모임부터 팀의 효율적인 일정 관리까지 책임집니다!',
         date: '2023.01 ~',
         icon: <HiOutlineUserGroup />,
         color: '#6db49b',
         textColor: 'black',
-        complete: false,
+        complete: true,
     },
     {
         path: 'pintalk',
@@ -129,6 +128,19 @@ const projectData = [
         date: '2023.03 ~',
         icon: <HiOutlineUserGroup />,
         color: '#d0b9da',
+        textColor: 'black',
+        complete: false,
+    },
+    {
+        path: 'step-in',
+        title: 'Step-In 으로 빠르게 API 설계하기',
+        filename: 'Step-In.md',
+        subtitle: '~ 진행중 ~',
+        description:
+            '~ 진행중 ~',
+        date: '2023.04 ~',
+        icon: <HiOutlineUserGroup />,
+        color: '#ee7c30',
         textColor: 'black',
         complete: false,
     },
