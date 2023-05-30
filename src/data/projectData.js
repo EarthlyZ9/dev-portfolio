@@ -81,16 +81,16 @@ const projectData = [
     },
     {
         path: 'pintalk',
-        title: '누구나 간편하게, Pintalk',
-        filename: 'Pintalk.md',
-        subtitle: '~ 진행중 ~',
+        title: '누구나 간편하게, PinTalk',
+        filename: 'PinTalk.md',
+        subtitle: 'Put a pin anywhere!',
         description:
-            '~ 진행중 ~',
-        date: '2023.01 ~',
+            'Django Channels 를 이용해 채팅 서비스 개발해보기',
+        date: '2023.01 ~ 2023.04',
         icon: <HiOutlineUserGroup />,
-        color: '#2b0e47',
+        color: '#2F80ED',
         textColor: 'white',
-        complete: false,
+        complete: true,
     },
     {
         path: 'aws-cdk-ml',
@@ -122,14 +122,15 @@ const projectData = [
         path: 'convey',
         title: '설문을 대하는 새로운 방법, Convey',
         filename: 'Convey.md',
-        subtitle: '~ 진행중 ~',
+        subtitle: '+ Eager loading 에 대한 고민',
         description:
-            '~ 진행중 ~',
+            '피험자들을 대상으로 한 연구 설문을 수합하는 과정을\n' +
+            '간편화해보자',
         date: '2023.03 ~',
         icon: <HiOutlineUserGroup />,
         color: '#d0b9da',
         textColor: 'black',
-        complete: false,
+        complete: true,
     },
     {
         path: 'step-in',

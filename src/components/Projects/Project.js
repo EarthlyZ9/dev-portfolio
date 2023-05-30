@@ -104,6 +104,9 @@ const Project = (props) => {
                     h1: ({ node, ...props }) => {
                         return <h1 {...props} className="markdown-h1-tag" />;
                     },
+                    ul: ({ node, ...props }) => {
+                        return <ul {...props} className="markdown-ul-tag" />;
+                    }
                 }}
             />
             {name === 'space-gem' && <SpaceGemRedirect />}
