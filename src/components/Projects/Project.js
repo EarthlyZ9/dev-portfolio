@@ -83,6 +83,15 @@ const Project = (props) => {
                                     />
                                 );
                             }
+                            if (element.props.alt === 'video') {
+                                return (
+                                    <img
+                                        style={{ width: '100%' }}
+                                        src={element.props.src}
+                                        alt={"video"}
+                                    />
+                                );
+                            }
                             if (element.props.href) {
                                 return element;
                             }
