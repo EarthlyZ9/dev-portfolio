@@ -1,0 +1,50 @@
+.card {
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 200px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container-hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icon-tag {
+    margin-top: 1rem;
+}
+
+.icon-tag-hover {
+    margin: 10px 0;
+}
+
+.description {
+    width: 90%;
+    height: 115px;
+}
+
+.desc-item {
+    background-color: #b1dacc;
+    border-radius: 10px;
+    width: 90%;
+    padding: 5%;
+    margin: 10px 0;
+    font-size: 0.8rem;
+}

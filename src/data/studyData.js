@@ -33,28 +33,28 @@ const studyData = [
     },
     {
         id: 5,
-        groupId: 2,
-        label: 'Vue.js',
-        size: 1400,
-    },
-    {
-        id: 6,
-        groupId: 2,
-        label: 'Next.js',
+        groupId: 1,
+        label: 'Go',
         size: 3000,
     },
-    {
-        id: 7,
-        groupId: 2,
-        label: 'Tailwind',
-        size: 2400,
-    },
-    {
-        id: 8,
-        groupId: 2,
-        label: 'Flutter',
-        size: 2090,
-    },
+    // {
+    //     id: 6,
+    //     groupId: 2,
+    //     label: 'Next.js',
+    //     size: 3000,
+    // },
+    // {
+    //     id: 7,
+    //     groupId: 2,
+    //     label: 'Tailwind',
+    //     size: 2400,
+    // },
+    // {
+    //     id: 8,
+    //     groupId: 2,
+    //     label: 'Flutter',
+    //     size: 2090,
+    // },
     {
         id: 9,
         groupId: 3,
@@ -103,7 +103,7 @@ const studyData = [
         groupId: 1,
         label: 'Docker',
         size: 6000,
-    }
+    },
 ];
 
 export { studyData };
