@@ -14,7 +14,6 @@ import classes from './Sidebar.module.css';
 import { IconContext } from 'react-icons';
 
 const Sidebar = (props) => {
-
     return (
         <nav className={`${classes.nav} ${props.className && props.className}`}>
             <div className={classes.profile}>
@@ -25,7 +24,7 @@ const Sidebar = (props) => {
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://github.com/linda2927"
+                        href="https://github.com/EarthlyZ9"
                     >
                         <IconContext.Provider value={{ size: 28 }}>
                             <>
@@ -60,7 +59,8 @@ const Sidebar = (props) => {
                 <NavHashLink
                     to="/#about-me"
                     className={
-                        props.hashLocation === '#about-me' && classes['menu-item']
+                        props.hashLocation === '#about-me' &&
+                        classes['menu-item']
                     }
                     onClick={props.onMenuClick && props.onMenuClick}
                 >
@@ -81,7 +81,8 @@ const Sidebar = (props) => {
                     to={'/#projects'}
                     // activestyle={{ backgroundColor: '#77a8a4' }}
                     className={
-                        props.hashLocation === '#projects' && classes['menu-item']
+                        props.hashLocation === '#projects' &&
+                        classes['menu-item']
                     }
                     onClick={props.onMenuClick && props.onMenuClick}
                 >
