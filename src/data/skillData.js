@@ -11,7 +11,6 @@ import {
     Spring,
     Swagger,
     Amazonaws,
-    Heroku,
     Github,
     Discord,
     Notion,
@@ -20,6 +19,7 @@ import {
     Asana,
     Slack,
     Go,
+    Docker,
 } from '@icons-pack/react-simple-icons';
 import React from 'react';
 
@@ -44,7 +44,7 @@ const skillData = [
         name: 'FastAPI',
         iconEl: Fastapi,
         color: '#009688',
-        description: 'BK 연구실 홈페이지 개발#SQLAlchemy',
+        description: 'BK 연구실 홈페이지 개발#SQLAlchemy + Alembic',
         tags: 'Backend',
     },
     {
@@ -90,13 +90,13 @@ const skillData = [
             '애용하는 API 문서화 도구#drf-yasg, springdoc, swagger-autogen 등',
         tags: 'Backend',
     },
-    {
-        name: 'Go',
-        iconEl: Go,
-        color: '#00ADD8',
-        description: '최근 흥미롭게 보고 있는 언어#Fiber vs Gin vs Echo',
-        tags: 'Backend',
-    },
+    // {
+    //     name: 'Go',
+    //     iconEl: Go,
+    //     color: '#00ADD8',
+    //     description: '최근 흥미롭게 보고 있는 언어#Fiber vs Gin vs Echo',
+    //     tags: 'Backend',
+    // },
     {
         name: 'AWS',
         iconEl: Amazonaws,
@@ -105,9 +105,9 @@ const skillData = [
         tags: 'Deployment',
     },
     {
-        name: 'Heroku',
-        iconEl: Heroku,
-        color: '#430098',
+        name: 'Docker',
+        iconEl: Docker,
+        color: '#2496ED',
         description: 'd',
         tags: 'Deployment',
     },

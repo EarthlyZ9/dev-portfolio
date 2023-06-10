@@ -8,20 +8,20 @@ const ExtraInfo = () => {
                 <p className="profile-category">Education</p>
                 <ul>
                     <li>
-                        <span className="number">2019</span> 동탄국제고등학교
-                        졸업
-                    </li>
-                    <li>
-                        <span className="number">2019 ~</span> 연세대학교
-                        경영학과
+                        <span className="number">2023.08</span> 연세대학교 졸업
+                        예정
                     </li>
                     <li>
                         <span className="number">2022.01 ~ 2022.05</span>{' '}
                         조지워싱턴대학교 교환학생
                     </li>
                     <li>
-                        <span className="number">2022.01</span> 컴퓨터과학과
-                        복수전공 진입
+                        <span className="number">2019.03</span> 연세대학교
+                        경영학과
+                    </li>
+                    <li>
+                        <span className="number">2019</span> 동탄국제고등학교
+                        졸업
                     </li>
                 </ul>
             </div>

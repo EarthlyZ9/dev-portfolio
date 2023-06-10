@@ -58,19 +58,19 @@ const skills = (props, ref) => {
                     />
                 ))}
             </div>
-            <div className={classes['text-divider']}>A Bit Of</div>
-            <div className={classes['skill-container']}>
-                {aBitOf.map((el, idx) => (
-                    <SkillCard
-                        key={idx}
-                        name={el.name}
-                        color={el.color}
-                        element={el.iconEl}
-                        description={el.description}
-                        tags={el.tags}
-                    />
-                ))}
-            </div>
+            {/* <div className={classes['text-divider']}>A Bit Of</div> */}
+            {/* <div className={classes['skill-container']}> */}
+            {/*    {aBitOf.map((el, idx) => ( */}
+            {/*        <SkillCard */}
+            {/*            key={idx} */}
+            {/*            name={el.name} */}
+            {/*            color={el.color} */}
+            {/*            element={el.iconEl} */}
+            {/*            description={el.description} */}
+            {/*            tags={el.tags} */}
+            {/*        /> */}
+            {/*    ))} */}
+            {/* </div> */}
             <div className={classes['text-divider']}>Communications</div>
             <div className={classes['skill-container']}>
                 {communications.map((el, idx) => (

@@ -6,7 +6,15 @@ import projectData from '../../data/projectData';
 
 const projects = (props, ref) => {
     const projects = useMemo(() => {
-        return projectData;
+        return projectData.sort(function (a, b) {
+            if (a.date > b.date) {
+                return -1;
+            } else if (a.date < b.date) {
+                return 1;
+            } else {
+                return 0;
+            }
+        });
     }, []);
 
     return (
