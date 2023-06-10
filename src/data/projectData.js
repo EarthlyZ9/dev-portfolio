@@ -45,8 +45,7 @@ const projectData = [
         title: 'Space Gem',
         filename: 'SpaceGem.md',
         subtitle: 'Unity 로 배우는 C#',
-        description:
-            'C# 과 유니티로 만들어보는 레트로 캐주얼 게임 Space Gem',
+        description: 'C# 과 유니티로 만들어보는 레트로 캐주얼 게임 Space Gem',
         date: '2022.10',
         icon: <HiOutlineUser />,
         color: '#2fd8e8',
@@ -84,8 +83,7 @@ const projectData = [
         title: '누구나 간편하게, PinTalk',
         filename: 'PinTalk.md',
         subtitle: 'Put a pin anywhere!',
-        description:
-            'Django Channels 를 이용해 채팅 서비스 개발해보기',
+        description: 'Django Channels 를 이용해 채팅 서비스 개발해보기',
         date: '2023.01 ~ 2023.04',
         icon: <HiOutlineUserGroup />,
         color: '#2F80ED',
@@ -97,8 +95,7 @@ const projectData = [
         title: 'AWS CDK 를 사용한 머신러닝 모델 배포',
         filename: 'CDK_ML.md',
         subtitle: 'AWS CDK - Lambda Function',
-        description:
-            '파이썬 CDK 를 이용하여 AWS 리소스 생성하고 관리하기',
+        description: '파이썬 CDK 를 이용하여 AWS 리소스 생성하고 관리하기',
         date: '2023.02',
         icon: <HiOutlineUser />,
         color: '#f57a4f',
@@ -135,15 +132,15 @@ const projectData = [
     {
         path: 'step-in',
         title: 'Step-In 으로 빠르게 API 설계하기',
-        filename: 'Step-In.md',
-        subtitle: '~ 진행중 ~',
+        filename: 'Step_In.md',
+        subtitle: 'Spring 프레임워크 입문!',
         description:
-            '~ 진행중 ~',
+            'Top-Down 방식의 아이디에이션을 도와주는 디자인 툴. 큰 Step 에서 시작해서 작은 Step 으로 아이디어를 구체화해보자!',
         date: '2023.04 ~',
-        icon: <HiOutlineUserGroup />,
+        icon: <HiOutlineUser />,
         color: '#ee7c30',
         textColor: 'black',
-        complete: false,
+        complete: true,
     },
 ];
 
