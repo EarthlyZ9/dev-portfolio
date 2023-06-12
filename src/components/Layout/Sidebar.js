@@ -49,7 +49,8 @@ const Sidebar = (props) => {
                 <NavHashLink
                     to={'/#home'}
                     className={
-                        props.hashLocation === '#home' && classes['menu-item']
+                        props.hashLocation === '/#/#home' &&
+                        classes['menu-item']
                     }
                     onClick={props.onMenuClick && props.onMenuClick}
                 >
@@ -59,7 +60,7 @@ const Sidebar = (props) => {
                 <NavHashLink
                     to="/#about-me"
                     className={
-                        props.hashLocation === '#about-me' &&
+                        props.hashLocation === '/#/#about-me' &&
                         classes['menu-item']
                     }
                     onClick={props.onMenuClick && props.onMenuClick}
@@ -70,7 +71,8 @@ const Sidebar = (props) => {
                 <NavHashLink
                     to={'/#skills'}
                     className={
-                        props.hashLocation === '#skills' && classes['menu-item']
+                        props.hashLocation === '/#/#skills' &&
+                        classes['menu-item']
                     }
                     onClick={props.onMenuClick && props.onMenuClick}
                 >
@@ -79,9 +81,8 @@ const Sidebar = (props) => {
                 </NavHashLink>
                 <NavHashLink
                     to={'/#projects'}
-                    // activestyle={{ backgroundColor: '#77a8a4' }}
                     className={
-                        props.hashLocation === '#projects' &&
+                        props.hashLocation === '/#/#projects' &&
                         classes['menu-item']
                     }
                     onClick={props.onMenuClick && props.onMenuClick}
@@ -92,7 +93,8 @@ const Sidebar = (props) => {
                 <NavHashLink
                     to={'/#study'}
                     className={
-                        props.hashLocation === '#study' && classes['menu-item']
+                        props.hashLocation === '/#/#study' &&
+                        classes['menu-item']
                     }
                     onClick={props.onMenuClick && props.onMenuClick}
                 >

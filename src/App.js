@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import classes from './App.module.css';
 import Sidebar from './components/Layout/Sidebar';
 import SidebarToggle from './components/Layout/SidebarToggle';
@@ -12,7 +12,7 @@ function App() {
     const [isToggleOpen, setIsToggleOpen] = useState(false);
     const isMobile = innerWidth <= 1024;
 
-    const [currentHashLocation, setCurrentHashLocation] = useState("#home");
+    const [currentHashLocation, setCurrentHashLocation] = useState('#home');
 
     const hashLocationHandler = (hash) => {
         setCurrentHashLocation(hash);
@@ -23,7 +23,6 @@ function App() {
             closeToggleMenuHandler();
         } else {
             window.history.back();
-
         }
     };
 
@@ -52,7 +51,7 @@ function App() {
     const appClasses = !isMobile ? classes.app : classes['app-mobile'];
 
     return (
-        <BrowserRouter>
+        <HashRouter>
             <div className={appClasses}>
                 {!isMobile ? (
                     <Sidebar hashLocation={currentHashLocation} />
@@ -66,14 +65,20 @@ function App() {
                         onClose={closeToggleMenuHandler}
                         isToggleOpen={isToggleOpen}
                     >
-                        <Sidebar onMenuClick={closeToggleMenuHandler} hashLocation={currentHashLocation} />
+                        <Sidebar
+                            onMenuClick={closeToggleMenuHandler}
+                            hashLocation={currentHashLocation}
+                        />
                     </Drawer>
                 )}
 
-                <Main isMobile={isMobile} changeHashLocation={hashLocationHandler} />
+                <Main
+                    isMobile={isMobile}
+                    changeHashLocation={hashLocationHandler}
+                />
             </div>
-             {!isMobile && <Footer />}
-        </BrowserRouter>
+            {!isMobile && <Footer />}
+        </HashRouter>
     );
 }
 

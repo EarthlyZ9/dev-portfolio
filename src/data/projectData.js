@@ -123,7 +123,7 @@ const projectData = [
         description:
             '피험자들을 대상으로 한 연구 설문을 수합하는 과정을\n' +
             '간편화해보자',
-        date: '2023.03 ~',
+        date: '2023.02 ~ 2023.03',
         icon: <HiOutlineUserGroup />,
         color: '#d0b9da',
         textColor: 'black',

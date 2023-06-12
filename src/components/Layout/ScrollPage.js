@@ -32,8 +32,8 @@ const ScrollPage = (props) => {
     const onIntersectionScroll = (targets) => {
         targets.forEach((t) => {
             if (t.isIntersecting) {
-                history.pushState(null,null,'#' + t.target.id);
-                props.changeHashLocation('#' + t.target.id);
+                history.pushState(null, null, '/#/#' + t.target.id);
+                props.changeHashLocation('/#/#' + t.target.id);
                 if (t.target.id === 'study') setStartSimulation(true);
             } else {
                 if (t.target.id === 'study') setStartSimulation(false);
