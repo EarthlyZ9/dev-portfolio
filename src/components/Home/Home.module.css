@@ -2,6 +2,8 @@
     height: 100%;
     width: 100%;
     display: flex;
+    position: relative;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -19,7 +21,109 @@
 
 }
 
-.title {
-    animation: fadein 4s ease-in-out
+.main-title {
+    font-family: 'Godo', sans-serif;
+    /*width: 24em;*/
+    margin: 0 auto;
+    border-right: 2px solid black;
+    font-size: 6.5rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: 0.145rem;
+    line-height: 100%;
+    height: fit-content;
 }
 
+.title {
+    font-family: 'Godo', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+/* Animation */
+.anim-typewriter{
+    animation:
+            typewriter 1.5s steps(9) 1s 1 normal both,
+            blinkTextCursor 500ms steps(9) infinite normal forwards,
+    removeCursor 1s linear 3.5s 1 normal forwards;
+}
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 100%;}
+}
+@keyframes blinkTextCursor{
+    from{border-right-color: black;}
+    to{border-right-color: transparent;}
+}
+
+@keyframes removeCursor {
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.dict {
+    position: absolute;
+    margin-bottom: 3rem;
+    bottom: 0;
+    animation: fadein 3s linear 2s 1 normal forwards;
+    -moz-animation: fadein 3s linear 2s 1 normal forwards; /* Firefox */
+    -webkit-animation: fadein 3s linear 2s 1 normal forwards; /* Safari and Chrome */
+    -o-animation: fadein 3s linear 2s 1 normal forwards; /* Opera */
+    /*animation-delay: 2s;*/
+    opacity: 0;
+}
+
+.dict h3 {
+    font-family: 'Godo', sans-serif;
+    font-size: 1.3rem;
+    margin-block-end: 0.3rem;
+    margin-block-start: 6rem;
+}
+
+.dict span {
+    color: lightgray;
+}
+
+.dict blockquote {
+    background-color: transparent;
+    border-left: 6px solid #77a8a4;
+    line-height: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-style: italic;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -8,7 +8,23 @@ const home = (props, sectionRefs) => {
             id={props.sectionId}
             ref={(el) => (sectionRefs.current[0] = el)}
         >
-            <h1 className={classes.title}>Earthlyz9 Dev Web Portfolio</h1>
+            <div>
+                <h1
+                    className={`${classes['main-title']} ${classes['anim-typewriter']}`}
+                >
+                    EARTHLYZ9
+                </h1>
+                <p className={classes.title}>Web Portfolio</p>
+            </div>
+            <div className={classes.dict}>
+                <h3>earthly</h3>
+                <span>[urth-lee]</span>
+                <blockquote>
+                    to prioritize practical matters and the tangible aspects of
+                    life rather than being overly concerned with abstract or
+                    spiritual matters
+                </blockquote>
+            </div>
         </section>
     );
 };
