@@ -12,7 +12,7 @@ const SpaceGemRedirect = () => {
         <div className={classes['space-gem-btn']}>
             <hr />
             <button type={'button'} onClick={openGameHandler}>
-                👉 게임하러 가기 (PC only) 👈
+                👉 게임하러 가기 (PC only) 🔈 소리 주의 👈
             </button>
         </div>
     );

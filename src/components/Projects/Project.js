@@ -11,10 +11,10 @@ import SpaceGemRedirect from './SpaceGemRedirect';
 import projectData from '../../data/projectData';
 
 const Project = (props) => {
-
     const params = useParams();
     const projectName = params.pid;
-    const filename = projectData.filter((p) => p.path === projectName)[0].filename;
+    const filename = projectData.filter((p) => p.path === projectName)[0]
+        .filename;
 
     const onBackButtonEvent = (e) => {
         e.preventDefault();
@@ -88,7 +88,7 @@ const Project = (props) => {
                                     <img
                                         style={{ width: '100%' }}
                                         src={element.props.src}
-                                        alt={"video"}
+                                        alt={'video'}
                                     />
                                 );
                             }
@@ -115,10 +115,10 @@ const Project = (props) => {
                     },
                     ul: ({ node, ...props }) => {
                         return <ul {...props} className="markdown-ul-tag" />;
-                    }
+                    },
                 }}
             />
-            {name === 'space-gem' && <SpaceGemRedirect />}
+            {projectName === 'space-gem' && <SpaceGemRedirect />}
         </div>
     );
 };
