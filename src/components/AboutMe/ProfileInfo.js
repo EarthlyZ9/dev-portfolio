@@ -26,7 +26,7 @@ const ProfileInfo = () => {
                 </div>
                 <div>
                     <p className="profile-category">Address</p>
-                    <p>Sungdongu, Seoul</p>
+                    <p>Gwangjin-gu, Seoul</p>
                 </div>
                 <div>
                     <p className="profile-category">Phone</p>
