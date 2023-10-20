@@ -34,7 +34,7 @@ const aboutMe = (props, ref) => {
                 title="생각의 기록 ✍️"
                 body="개발자 지망생으로서, 생각하기와 글쓰기를
                     좋아하는 대학생으로서 기록한 생각의 흐름들."
-                url="https://earthlyz9-dev.oopy.io/thoughts"
+                url="https://notion.earthlyz9.dev/thoughts"
             />
         </section>
     );
