@@ -35,7 +35,7 @@ const Sidebar = (props) => {
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://earthlyz9-dev.oopy.io"
+                        href="https://notion.earthlyz9.dev"
                     >
                         <IconContext.Provider value={{ size: 25 }}>
                             <>
