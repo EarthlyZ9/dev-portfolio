@@ -45,7 +45,7 @@ const study = (props, ref) => {
             <Banner
                 title="Earthlyz9 Dev Library 📚"
                 body="나를 위해 꾸준히 기록합니다. 하나의 큰 도서관이 될 때까지!"
-                url="https://earthlyz9-dev.oopy.io"
+                url="https://earthlyz9.dev"
             />
         </section>
     );
