@@ -131,7 +131,7 @@ const projectData = [
     },
     {
         path: 'step-in',
-        title: 'Step-In 으로 빠르게 API 설계하기',
+        title: '생각을 정리하는 방법, Step-In',
         filename: 'Step_In.md',
         subtitle: 'Spring 프레임워크 입문!',
         description:
