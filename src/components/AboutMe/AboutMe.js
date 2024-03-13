@@ -17,9 +17,6 @@ const aboutMe = (props, ref) => {
             ref={(el) => (ref.current[1] = el)}
         >
             <Title title={'About Me'} />
-            {/* <p className={classes.summary}> */}
-            {/*    어쩌구 저쩌구 ~ 핵심이 되는 한 문장 */}
-            {/* </p> */}
             <div className={classes.intro}>
                 <strong>For a Better Tomorrow!</strong>
                 <br />

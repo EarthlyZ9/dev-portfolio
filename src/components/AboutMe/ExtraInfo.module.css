@@ -1,6 +1,6 @@
 .extra {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     margin-top: 2rem;
 }
@@ -21,4 +21,14 @@
     .col {
         width: 100%;
     }
+}
+
+.career {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.etc {
+    display: flex;
+    flex-direction: row;
 }
