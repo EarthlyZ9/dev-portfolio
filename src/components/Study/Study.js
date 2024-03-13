@@ -41,10 +41,10 @@ const study = (props, ref) => {
             ref={(el) => (ref.current[4] = el)}
         >
             <Title title={'Study'} className={classes.title} />
-            <div id="bubble-chart" style={{ textAlign: 'center', overflowX: 'scroll' }} ref={divRef}></div>
+            <div id="bubble-chart" style={{ textAlign: 'center', overflowX: 'auto' }} ref={divRef}></div>
             <Banner
                 title="Earthlyz9 Dev Library 📚"
-                body="나를 위해 꾸준히 기록합니다. 하나의 큰 도서관이 될 때까지!"
+                body="나를 위해 꾸준히 기록합니다."
                 url="https://notion.earthlyz9.dev"
             />
         </section>
