@@ -6,7 +6,6 @@ import skillData from '../../data/skillData';
 
 const skills = (props, ref) => {
     const mainSkills = [];
-    const aBitOf = [];
     const communications = [];
     const deploy = [];
     skillData.forEach((value) => {
@@ -15,10 +14,8 @@ const skills = (props, ref) => {
                 mainSkills.push(value);
                 break;
             case 'Deployment':
+            case 'Version Control':
                 deploy.push(value);
-                break;
-            case 'Frontend':
-                aBitOf.push(value);
                 break;
             case 'Communications':
                 communications.push(value);
@@ -45,7 +42,7 @@ const skills = (props, ref) => {
                     />
                 ))}
             </div>
-            <div className={classes['text-divider']}>Deployment</div>
+            <div className={classes['text-divider']}>Deployment & Version Control</div>
             <div className={classes['skill-container']}>
                 {deploy.map((el, idx) => (
                     <SkillCard
@@ -58,19 +55,6 @@ const skills = (props, ref) => {
                     />
                 ))}
             </div>
-            {/* <div className={classes['text-divider']}>A Bit Of</div> */}
-            {/* <div className={classes['skill-container']}> */}
-            {/*    {aBitOf.map((el, idx) => ( */}
-            {/*        <SkillCard */}
-            {/*            key={idx} */}
-            {/*            name={el.name} */}
-            {/*            color={el.color} */}
-            {/*            element={el.iconEl} */}
-            {/*            description={el.description} */}
-            {/*            tags={el.tags} */}
-            {/*        /> */}
-            {/*    ))} */}
-            {/* </div> */}
             <div className={classes['text-divider']}>Communications</div>
             <div className={classes['skill-container']}>
                 {communications.map((el, idx) => (

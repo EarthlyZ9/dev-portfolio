@@ -6,8 +6,7 @@ const SkillCard = (props) => {
     const [isHover, setIsHover] = useState(false);
     const [iconSize, setIconSize] = useState(70);
     const Icon = props.element;
-    const descList = props.description.split('#');
-    const hoverAction = props.tags === 'Backend' || props.tags === 'Frontend';
+    const hoverAction = false;
 
     useEffect(() => {
         if (isHover) setIconSize(40);
@@ -34,21 +33,8 @@ const SkillCard = (props) => {
                     color={props.color}
                     style={{ margin: '20px 0 10px 0' }}
                 />
-                {!isHover ? (
-                    <p className={classes['icon-tag']}>{props.name}</p>
-                ) : (
-                    <h3 className={classes['icon-tag-hover']}>{props.name}</h3>
-                )}
+                <p className={classes['icon-tag']}>{props.name}</p>
             </div>
-            {isHover && (
-                <div className={classes.description}>
-                    {descList.map((value, idx) => (
-                        <div key={idx} className={classes['desc-item']}>
-                            {value}
-                        </div>
-                    ))}
-                </div>
-            )}
         </Card>
     );
 };
