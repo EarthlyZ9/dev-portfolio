@@ -10,6 +10,7 @@ import {
 import { GrMail } from 'react-icons/gr';
 import { FaGithubAlt } from 'react-icons/fa';
 import { SiLivejournal } from 'react-icons/si';
+import { IoDocumentAttach } from "react-icons/io5";
 import classes from './Sidebar.module.css';
 import { IconContext } from 'react-icons';
 
@@ -28,7 +29,7 @@ const Sidebar = (props) => {
                     >
                         <IconContext.Provider value={{ size: 28 }}>
                             <>
-                                <FaGithubAlt />
+                                <FaGithubAlt title="GitHub" />
                             </>
                         </IconContext.Provider>
                     </a>
@@ -39,7 +40,18 @@ const Sidebar = (props) => {
                     >
                         <IconContext.Provider value={{ size: 25 }}>
                             <>
-                                <SiLivejournal />
+                                <SiLivejournal  title="Blog" />
+                            </>
+                        </IconContext.Provider>
+                    </a>
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.rallit.com/resumes/11292@linda2927/%EC%9D%B4%EC%A7%80%EC%88%98"
+                    >
+                        <IconContext.Provider value={{ size: 28 }}>
+                            <>
+                                <IoDocumentAttach title="Resumé" />
                             </>
                         </IconContext.Provider>
                     </a>
