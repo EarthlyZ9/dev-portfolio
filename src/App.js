@@ -51,34 +51,40 @@ function App() {
     const appClasses = !isMobile ? classes.app : classes['app-mobile'];
 
     return (
-        <HashRouter>
-            <div className={appClasses}>
-                {!isMobile ? (
-                    <Sidebar hashLocation={currentHashLocation} />
-                ) : (
-                    !isToggleOpen && (
-                        <SidebarToggle onToggleClick={openToggleMenuHandler} />
-                    )
-                )}
-                {isToggleOpen && (
-                    <Drawer
-                        onClose={closeToggleMenuHandler}
-                        isToggleOpen={isToggleOpen}
-                    >
-                        <Sidebar
-                            onMenuClick={closeToggleMenuHandler}
-                            hashLocation={currentHashLocation}
-                        />
-                    </Drawer>
-                )}
-
-                <Main
-                    isMobile={isMobile}
-                    changeHashLocation={hashLocationHandler}
-                />
-            </div>
-            {!isMobile && <Footer />}
-        </HashRouter>
+        <div className={classes["maintenance-box"]}>
+            <div className={classes['image-box']}><img src={'/img/maintenance.svg'} alt="maintenance" /></div>
+            <h1>This site is currently in maintenance.</h1>
+            <div>Renewal in progress.</div>
+            <div>Meanwhile visit, <a href="https://www.github.com/EarthlyZ9">GitHub</a></div>
+        </div>
+        // <HashRouter>
+        //     <div className={appClasses}>
+        //         {!isMobile ? (
+        //             <Sidebar hashLocation={currentHashLocation} />
+        //         ) : (
+        //             !isToggleOpen && (
+        //                 <SidebarToggle onToggleClick={openToggleMenuHandler} />
+        //             )
+        //         )}
+        //         {isToggleOpen && (
+        //             <Drawer
+        //                 onClose={closeToggleMenuHandler}
+        //                 isToggleOpen={isToggleOpen}
+        //             >
+        //                 <Sidebar
+        //                     onMenuClick={closeToggleMenuHandler}
+        //                     hashLocation={currentHashLocation}
+        //                 />
+        //             </Drawer>
+        //         )}
+        //
+        //         <Main
+        //             isMobile={isMobile}
+        //             changeHashLocation={hashLocationHandler}
+        //         />
+        //     </div>
+        //     {!isMobile && <Footer />}
+        // </HashRouter>
     );
 }
 
